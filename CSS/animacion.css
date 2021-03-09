@@ -38,7 +38,59 @@ y los vamos a hacer girar, alterar y transformar
 .label-container{
     width: 100%;
     padding: 1rem;
-    border: 2px solid rgb(55,55,55);
     box-sizing: border-box;
+
+}
+
+.label{
+    width: 64px;
+    background-color: rgb(60,189,55);
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    /*aqui es donde se anima*/
+    animation-name: label-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.loader{
+    width: 64px;
+    height: 64px;
+    border: 5px solid rgb(170,30,90);
+    border-top: 5px solid #9ceaf8;
+    border-radius: 50%;
+    animation: girar 2s linear infinite;
+
+
+}
+
+.loader-doble{
+    width: 64px;
+    height: 64px;
+    border: 16px solid rgb(170,87,34);
+    border-top: 16px solid #9ceaf8;
+    border-bottom: 16px solid rgb(45, 67, 123);
+    border-radius: 50%;
+    animation: girar 2s ease-in-out infinite;
+}
+.animada{
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 200 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animation-test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
 }
