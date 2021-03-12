@@ -84,11 +84,11 @@ y los vamos a hacer girar, alterar y transformar
     background-color: red;
     color: white;
     text-align: center;
-    height: 200 px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: animation-test;
+    animation-name: animacion_test;
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
