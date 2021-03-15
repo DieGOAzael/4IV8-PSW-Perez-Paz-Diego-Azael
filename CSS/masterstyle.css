@@ -1,38 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+
+
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.arrow {
+  z-index: 1000;
+  opacity: 0.5;
+  position: absolute;
+
+  &--top {
+    top: 0;
+    left: -5em;
+  }
+
+  &--bottom {
+    bottom: 0;
+    right: 3em;
+  }
+}
+
+.circle {
+  transform: translate(50%, -50%) rotate(0deg);
+  transform-origin: center;
+
+  
+}
+
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: pink;
+}
+
+.dotted-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  animation: rotation 38s linear infinite;
+}
+
+
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 10;
+  animation: draw 15s ease-in-out alternate infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.item-to {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: ease;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade {
+  from {
+    transform: translate(10%, -10%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade-alt {
+  from {
+    transform: translate(-20%, 20%) rotate(0deg);
+  }
+  to {
+    transform: translate(-60%, 60%) rotate(360deg);
+  }
+}
+
+
 *{
     padding: 0;
     margin: 0;
-    color: #472836;
+    color: #343a40;
     text-align: center;
     
 }   
     html, body{
-        background-color: #472836;
+        background-color: #022b3a;
 
     }
     .main-container{
-        border: 4px solid #EBD494;
-        border-radius: 10px;
-        margin: 2rem;
+        border: 5px solid #ffffff;
+        border-radius: 15px;
+        margin: 3rem;
 
-        background-color: #FEFFBE;
+        background-color: #bfdbf7;
     }
-    nav, section, footer, article, aside{
-        border: 2px solid #EBD494;
-        margin: 1rem;
+    nav, section, article, aside{
+        border: 2px solid #ffffff;
+        margin: 3rem;
         border-radius: 10px;
         padding: 1rem;
 
 
     }
+    footer{
+        width: 50%;
+        height: 10x;
+        border: 2px solid #ffffff;
+        margin: 0.5rem;
+        border-radius: 10px;
+        padding: 1rem;
+        cursor: default;
+        font-size:14px;
+        transition: all 0.2s ease-in-out;
+        opacity: 0.5;
+    }
+    footer:hover {
+        opacity: 1;
+        }
+  
     article, aside{
-        width: 40%;
+        width: 70%;
         display: inline-block;
-        height: 300px;
-        background-color: #D7EBBA;
-
+        height: 200px;
+        background-color: #e1e5f2;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        
+    }
+    article:hover{
+        transform: scale(1.1);
 
     }
+    aside:hover{
+        
+            box-shadow: 30px 30px #022b3a, 30px 30px #022b3a, 30px 30px #022b3a;
+            transform: translateX(-3px);
+            
+    }
+    
 
     nav, section, footer{
-        background-color: #9AD2CB;
+        background-color: #1f7a8c;
     }
+    nav {
+            
+            position: relative;
+            animation: movnav 10s 2;
+            animation-direction: alternate;
+          }
+          
+          @keyframes movnav {
+            0%   {background: #1f7a8c; left: 0px; top: 0px;}
+            25%  {background: #aec5eb; left: 50px; top: 0px;}
+            0%   {background: #1f7a8c(25, 18, 44); left: 0px; top: 0px;}
+            100% {background: #73eedc; left: -50px; top: 0px;}
+            
+    }
+    @-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+.animated {
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: white;
+    background-color: #1f7a8c;
+    margin: 1rem;
+    border-radius: 500px;
+    
+}
+
+
+    
+
+    
