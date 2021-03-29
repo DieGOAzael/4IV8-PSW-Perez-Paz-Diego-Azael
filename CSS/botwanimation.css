@@ -1,0 +1,582 @@
+  
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .c1 {
+    width: 25%;
+  }
+
+  .c4 {
+    width: 75%;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.parallax {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .z1 {
+    background-image: url('https://images6.alphacoders.com/712/thumb-1920-712175.jpg');
+    height: 50rem;
+  }
+  .z2 {
+    background-image: url('https://files.wallpaperpass.com/2019/10/legend%20of%20zelda%20wallpaper%2082%20-%201920x1080-1024x576.jpg');
+    height: 319rem;
+  }
+  .z3 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e2a5dcd-6a82-4182-9032-d31b5d6db4d9/dcm3g53-93efc7b1-711d-4d9d-9c7f-132c71e31cac.jpg/v1/fill/w_1192,h_670,q_70,strp/sunset_run_by_vegacolors_dcm3g53-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDgwIiwicGF0aCI6IlwvZlwvM2UyYTVkY2QtNmE4Mi00MTgyLTkwMzItZDMxYjVkNmRiNGQ5XC9kY20zZzUzLTkzZWZjN2IxLTcxMWQtNGQ5ZC05YzdmLTEzMmM3MWUzMWNhYy5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vznFg8mAMEjYHzYbELAAw0wsAHc3b_VgHcRK2ez5R5M');
+    height: 60rem;
+  }
+  body{
+      font-family: 'Roboto Slab', serif;
+      justify-content: center;
+      align-items: center;
+      margin:0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 80vw;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    .btn {
+      flex: 1 1 auto;
+      margin: 10px;
+      padding: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 5px;
+     }
+    
+  
+    
+    .btn:hover {
+      background-position: right center;
+    
+    }
+    
+    .btn-1 {
+      background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    }
+    
+    .btn-2 {
+      background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    }
+    
+    .btn-3 {
+      background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    }
+    
+    .btn-4 {
+      background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    }
+    
+    .btn-5 {
+      background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    }
+  
+    h1 {
+      text-align: center;
+      position: center;
+      
+      font-family: 'Roboto Slab', serif;
+      text-transform: uppercase;
+      font-size: 7.5em;
+      letter-spacing: 4px;
+      overflow: hidden;
+      background: linear-gradient(3deg, rgb(180, 164, 92), rgb(255, 239, 96), rgb(180, 135, 92));
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 10s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+    
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
+  
+  
+    .site {
+      
+      text-align: center;
+      background-color: #efefef;
+      font-size: .8em;
+      color: #444;
+      position:relative
+    }
+    .site a {
+      color: #666;
+      text-decoration: none;
+    }
+    .site a:hover {
+      color: #222;
+    }
+    
+    .site nav{
+      position:absolute;
+      top:0;
+      left:0;
+      background:#222;
+      width:100%
+    }
+    .site nav a{
+      padding:10px 30px;
+      font-size:1.3em;
+      display:inline-block
+    }
+    .site nav a:hover{
+      background:#333;
+      color:#fff
+    }
+  
+    .main-container{
+      border: 2px solid #ffffff;
+      border-radius: 5px;
+      margin: 0rem;
+  
+      
+  }
+  article, aside{
+    border: 0px solid #ffffff;
+    margin: 3rem;
+    border-radius: 1px;
+    padding: 1rem;
+    opacity: 0.5;
+    background-color: rgba(241, 236, 203, 0.199);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+      
+  
+  
+  }
+  P{
+      margin: 5rem;
+      color: white;
+      text-align: justify;
+      position: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 25px;
+    }
+  
+    h2{
+      color: rgb(182, 166, 97);
+      text-align: center;
+      position: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 50px;
+    }
+    img{
+      height:500px;
+      float: left;
+      margin: 3rem;
+      } 
+  
+    iframe{
+      width:1000px;
+      height: 615px;
+      border-color:0;
+    
+  
+    }
+    article:hover{
+      opacity: 1;
+  
+  
+  }
+  aside:hover{
+  
+    opacity: 1;
+          box-shadow: 15px 15px rgba(182, 166, 97, 0.301), 15px 15px rgba(182, 166, 97, 0.301), 15px 15px rgba(182, 166, 97, 0.301);
+          transform: translateX(-3px);
+  }
+  
+  
+  
+  
+
+ul {
+     list-style: none;
+     padding: 0;
+     margin: 0 auto;
+     display: inline-block;
+     position: relative;
+     height: 100%; 
+}
+li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 34px;
+      position: relative;
+      opacity: 1;
+}
+a {
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
+        
+a:hover:after,
+a:focus:after,
+a:active:after {
+  width: 100%;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: white;
+  transition: .35s;
+}
+
+
+
+.zelda-container {
+  width: 768px;
+  height: 432px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.stage {
+  width: 300px;
+  height: 300px;
+  left: 220px;
+  top: 50px;
+  position: absolute;
+  perspective: 800px;
+  perspective-origin: 50% 190px;
+}
+.stage .triangle {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform-origin: 125px 50%;
+}
+.stage .triangle.one {
+  animation: rotate 5s infinite linear, introduce-1 5s linear;
+}
+.stage .triangle.two {
+  top: 150px;
+  left: 0;
+  animation: rotate 5s infinite linear, introduce-2 5s linear;
+}
+.stage .triangle.three {
+  top: 150px;
+  left: 150px;
+  animation: rotate 5s infinite linear, introduce-3 5s linear;
+}
+.stage .triangle figure {
+  display: block;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.stage .triangle figure.front {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid #ffe60370;
+  transform: translateZ(20px);
+}
+.stage .triangle figure.back {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid #ffe60370;
+  transform: rotateY(180deg) translateZ(20px);
+}
+.stage .triangle figure.side1 {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 168px;
+  width: 40px;
+  background-color: #ffe60370;
+  transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+}
+.stage .triangle figure.side2 {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 168px;
+  width: 40px;
+  background-color: #ffe60370;
+  transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+}
+.stage .triangle figure.side3 {
+  content: " ";
+  background-color: #ffe60370;
+  width: 150px;
+  height: 40px;
+  transform: translateY(130px) rotateX(-90deg);
+}
+
+@keyframes rotate {
+  0% {
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+@keyframes introduce-1 {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  45% {
+    top: -100px;
+    -moz-transform: rotateY(180deg) rotateX(-180deg);
+    -ms-transform: rotateY(180deg) rotateX(-180deg);
+    -webkit-transform: rotateY(180deg) rotateX(-180deg);
+    transform: rotateY(180deg) rotateX(-180deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    top: 0;
+    -moz-transform: rotateY(360deg) rotateX(-360deg);
+    -ms-transform: rotateY(360deg) rotateX(-360deg);
+    -webkit-transform: rotateY(360deg) rotateX(-360deg);
+    transform: rotateY(360deg) rotateX(-360deg);
+  }
+}
+
+@keyframes introduce-2 {
+  0% {
+    left: -150px;
+    top: 250px;
+    opacity: 0;
+  }
+  45% {
+    left: -75px;
+    top: 200px;
+    -moz-transform: rotateY(180deg) rotateX(-180deg);
+    -ms-transform: rotateY(180deg) rotateX(-180deg);
+    -webkit-transform: rotateY(180deg) rotateX(-180deg);
+    transform: rotateY(180deg) rotateX(-180deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    top: 150px;
+    left: 0;
+    -moz-transform: rotateY(360deg) rotateX(-360deg);
+    -ms-transform: rotateY(360deg) rotateX(-360deg);
+    -webkit-transform: rotateY(360deg) rotateX(-360deg);
+    transform: rotateY(360deg) rotateX(-360deg);
+  }
+}
+
+@keyframes introduce-3 {
+  0% {
+    left: 350px;
+    top: 250px;
+    opacity: 0;
+  }
+  45% {
+    left: 275px;
+    top: 200px;
+    -moz-transform: rotateY(180deg) rotateX(-180deg);
+    -ms-transform: rotateY(180deg) rotateX(-180deg);
+    -webkit-transform: rotateY(180deg) rotateX(-180deg);
+    transform: rotateY(180deg) rotateX(-180deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    top: 150px;
+    left: 150px;
+    -moz-transform: rotateY(360deg) rotateX(-360deg);
+    -ms-transform: rotateY(360deg) rotateX(-360deg);
+    -webkit-transform: rotateY(360deg) rotateX(-360deg);
+    transform: rotateY(360deg) rotateX(-360deg);
+  }
+}
+
+@keyframes animate-background {
+  0% {
+    background: #000;
+  }
+  83% {
+    background: #000;
+  }
+  84% {
+    background: #fff;
+  }
+  87%, 100% {
+    background: #000;
+  }
+}
+
+@keyframes animate-background-picture {
+  0%,86% {
+    opacity: 0;
+  }
+  86.01%, 100% {
+    opacity: 1;
+  }
+}
+footer {
+    margin: 3rem;
+    transition: all 0.2s ease-in-out;
+	background: transparent;
+  font-family: 'Roboto Slab', serif;
+}
+h3{
+  color: rgb(182, 166, 97);
+  text-align: center;
+  position: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 30px 0;
+}
+.box__content{
+  width: 70%;
+}
+.box__icon{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #EEAD33;
+}
+
+.main-footer{
+  background: #282828;
+  color: #828282;
+}
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__title{
+  font-size: 1.8em;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+  
+  .container-design .design__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container-design, .container-tips{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .design__item{
+    width: 50%;
+  }
+  .container-box{
+    width: 50%;
+  }
+  .container-tips {
+    height: 500px;
+  }
+  .container-tips .design__item{
+    height: 100%;
+  }
+  .container-tips .design__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .column--50-25 {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  .design__title{
+    font-size: 2.5em;
+  }
+  .design__item{
+    height: 500px;
+  }
+}
+
+h4{
+  font: 5px;
+  font-family: 'Roboto Slab', serif;
+}
