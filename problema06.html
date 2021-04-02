@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/problema6.css">
+    <script src="./JS/problema6.js""></script>
+    <title>Problema 6</title>
+</head>
+<body>
+    <h2>Problema 6</h2>
+    
+    <h1>Realizar un algoritmo que calcule la edad de una persona.</h1>
+    
+        <form method="post" name="formulario">
+            <table class="TablaPrincipal">
+                <tr>
+                    <td class="td_sup">
+                        Digite el año actual:
+                    </td>
+                    <td class="td_sup">
+                        <input type="text" name="año_actual" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_inf">
+                        Digite el año de su nacimiento:
+                    </td>
+                    <td class="td_inf">
+                        <input type="text" name="año_nacer" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup"></td>
+                    <td class="td_sup">
+                        <input type="button" value="Calcular edad" name="enviar" onclick="calculo()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_inf">
+                        Edad aproximada:
+                    <td class="td_inf">
+                        <input type="text" name="final" id="cantidad" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup"></td>
+                    <td class="td_sup">
+                        <input type="button" value="Borrar" name="reset" onclick="borrar()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <button role="link" onclick="window.location='ProblemasJS.html'">Regresar al selector</button>
+</body>
+</html>

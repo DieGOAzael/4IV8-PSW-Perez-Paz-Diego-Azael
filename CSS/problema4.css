@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/154c3557-5bbf-42d3-87cf-5f44a18856e8/ddm6tx0-01c2b418-33be-4203-a407-676e8578bcb2.png/v1/fill/w_1192,h_670,q_70,strp/the_neon_shallows_by_leikoi_ddm6tx0-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0yODgwIiwicGF0aCI6IlwvZlwvMTU0YzM1NTctNWJiZi00MmQzLTg3Y2YtNWY0NGExODg1NmU4XC9kZG02dHgwLTAxYzJiNDE4LTMzYmUtNDIwMy1hNDA3LTY3NmU4NTc4YmNiMi5wbmciLCJ3aWR0aCI6Ijw9NTEyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qD7cixIl3iuIJNaodGT3wOUidkFstBWrV403dJHKjN0");
+    font-family: "Roboto", Arial;
+  }
+  h1 {
+      font-family: "Roboto", Arial;
+      text-align: justify;
+      padding: 3rem;
+      color: #f4f3ee;
+  }
+  h2{
+    font-family: "Roboto", Arial;
+      text-align: center;
+      font-size: 60px;
+      padding: 1rem;
+      color: #ffffff;
+  }
+
+  ul {
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+
+
+table{
+	border-style: hidden;
+    background: rgba(243, 108, 74, 0.199);
+    border: none;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    padding-left: 30%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.856);
+    
+}
+th, td {
+    text-align: left;
+    padding: 1rem;
+}
+.td_sup{
+    align-items: right;
+    justify-content: right;
+    background-color: rgba(241, 69, 69, 0.637);
+}
+.td_inf{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(55, 219, 178, 0.486);
+}
+
+.input_text{
+    align-items: center;
+    justify-content: center;
+    size: 50;
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(252, 172, 172);
+    letter-spacing: 3px;
+}
+
+
+
+input[type="checkbox"]
+{
+    display: none;
+}
+input[type = "checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+button {
+    background-position: center;
+    color: #1df2ab;
+    background-color: transparent;
+    border: 1px solid #0bac76;
+    border-radius: 4px;
+    padding: 15px 18px 30px 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    box-shadow: 0 0 4px #999;
+    transition: background 0.8s;
+    }
+  button:hover {
+    background:#eb1b3ee1 radial-gradient(circle, transparent 1%, #eb1b3ee1 1%) center/15000%;
+    color: white;
+  }
+  button:active{
+    background-color:#292d3e;
+    background-size: 100%;
+    transition: background 0s;
+    }

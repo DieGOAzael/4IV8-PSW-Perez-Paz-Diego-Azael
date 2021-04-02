@@ -1,347 +1,521 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
-
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
+html, body{
+    margin: 0px;
 }
 
-h2 {
-  font-size: 2em;
+header, footer{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+    background: #0081a7;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-
-  
+header h1{
+    color: #fdfffc;
+    font-size: 80px;
+    font-weight: lighter;
+    margin-bottom: 5px;
 }
 
-.arrow {
-  z-index: 1000;
-  opacity: 0.5;
-  position: absolute;
-
-  &--top {
-    top: 0;
-    left: -5em;
-  }
-
-  &--bottom {
-    bottom: 0;
-    right: 3em;
-  }
+header span{
+    color: #222;
 }
 
-.circle {
-  transform: translate(50%, -50%) rotate(0deg);
-  transform-origin: center;
-
-  
+footer span
+{
+  color: #AAA;
 }
 
-.backdrop {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  background-color: pink;
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
 }
 
-.dotted-circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0.3;
-  animation: rotation 38s linear infinite;
-}
-
-
-.draw-in {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 10;
-  animation: draw 15s ease-in-out alternate infinite;
-}
-
-@keyframes draw {
-  from {
-    stroke-dashoffset: 1000;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.item-to {
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  transform-origin: bottom;
-}
-
-.bounce-1 {
-  animation-name: bounce-1;
-  animation-timing-function: ease;
-}
-
-.bounce-2 {
-  animation-name: bounce-2;
-  animation-timing-function: ease;
-}
-
-.bounce-3 {
-  animation-name: bounce-3;
-  animation-timing-function: ease;
-}
-
-@keyframes bounce-1 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce-2 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce-3 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes gradient-fade {
-  from {
-    transform: translate(10%, -10%) rotate(0deg);
-  }
-  to {
-    transform: translate(50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes gradient-fade-alt {
-  from {
-    transform: translate(-20%, 20%) rotate(0deg);
-  }
-  to {
-    transform: translate(-60%, 60%) rotate(360deg);
-  }
-}
-
-
-*{
-    padding: 0;
-    margin: 0;
-    color: #343a40;
-    text-align: center;
-    
-}   
-    html, body{
-        background-color: #022b3a;
-
-    }
-    .main-container{
-        border: 5px solid #ffffff;
-        border-radius: 15px;
-        margin: 3rem;
-
-        background-color: #bfdbf7;
-    }
-    
-    nav, section, article, aside{
-        border: 2px solid #ffffff;
-        margin: 3rem;
-        border-radius: 10px;
-        padding: 1rem;
-
-
-    }
-    footer{
-        width: 50%;
-        height: 20px;
-        border: 2px solid #ffffff;
-        margin: 0.5rem;
-        border-radius: 10px;
-        padding: 1rem;
-        cursor: default;
-        font-size:14px;
-        transition: all 0.2s ease-in-out;
-        opacity: 0.5;
-    }
-    footer:hover {
-        opacity: 1;
-        }
-  
-    article, aside{
-        width: 70%;
-        display: inline-block;
-        height: 220px;
-        background-color: #e1e5f2;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        
-    }
-    article:hover{
-        transform: scale(1.1);
-
-    }
-    aside:hover{
-        
-            box-shadow: 30px 30px #022b3a, 30px 30px #022b3a, 30px 30px #022b3a;
-            transform: translateX(-3px);
-            
-    }
-    
-
-    nav, section, footer{
-        background-color: #1f7a8c;
-    }
-    nav {
-            
-            position: relative;
-            animation: movnav 6s 2;
-            animation-direction: alternate;
-          }
-          
-          @keyframes movnav {
-            0%   {background: #1f7a8c; left: 0px; top: 0px;}
-            25%  {background: #aec5eb; left: 50px; top: 0px;}
-            0%   {background: #1f7a8c(25, 18, 44); left: 0px; top: 0px;}
-            100% {background: #73eedb75; left: -50px; top: 0px;}
-            
-    }
-    @-webkit-keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-.shake {
-  -webkit-animation-name: shake;
-  animation-name: shake;
-}
-
-.animated {
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    font-family: Arial, Helvetica, Sans-serif;
-    color: white;
-    background-color: #1f7a8c;
-    margin: 1rem;
-    border-radius: 500px;
-    
-}
-button {
-    color: #bfdbf7;
-    background-color: #68b0be;
-    border: 1px solid #4d818b7a;
-    border-radius: 4px;
-    padding: 15px 18px 30px 15px
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
     cursor: pointer;
-    height: 32px;
-    font-size: 14px;
-    box-shadow: 0 0 4px #999;
-    background-position: center;
-    transition: background 0.8s;
-    transition: all 0.2s ease-in-out;
-    }
-    button:hover {
-    background:#e1e5f2 radial-gradient(circle, transparent 1%, #e3d0f5 1%) center/15000%;
-    color: white;
-    transform: rotateZ(-30deg);
-    }
-    button:active{
-    background-color:#292d3e;
-    background-size: 100%;
-    transition: background 0s;
-    }
+}
 
-    button1 {
-        color: #1f7a8c;
-        background-color: #bfdbf7;
-        border: 1px solid #1D9AF2;
-        border-radius: 4px;
-        padding: 0 15px;
-        cursor: pointer;
-        height:32px;
-        font-size:14px;
-        background-position: center;
-        transition: background 0.8s;
-        }
-        button1:active {
-        box-shadow: 0 3px 0 #1D9AF2;
-        top: 4px;
-        }
+.red
+{
+    background: #00afb9;
+}
 
-        
+.purple
+{
+    background: #aed9e0;
+}
 
-    
+.indigo
+{
+    background: #fed9b7;
+}
 
-    
+.blue
+{
+    background: #f07167;
+}
+
+.cyan
+{
+    background: #00bcd4;
+}
+
+.teal
+{
+    background: #009688;
+}
+
+.green
+{
+    background: #4caf50;
+}
+
+.lightGreen
+{
+    background: #8bc34a;
+}
+
+.lime
+{
+    background: #c0ca33;
+}
+
+.yellow
+{
+    background: #fdd835;
+}
+
+.amber
+{
+    background: #ffc107;
+}
+
+.orange
+{
+    background: #ff9800
+}
+
+.deepOrange
+{
+    background: #ff5722;
+}
+
+.brown
+{
+    background: #795548;
+}
+
+.gray
+{
+    background: #9e9e9e;
+}
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* Border from Y to X  */
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+/* Border X get width  */
+div.borderXwidth a:before, div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+/* Pull down  */
+div.pullDown a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullDown a:hover:before
+{
+    height: 100%;
+}
+
+/* Pull up  */
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before
+{
+    height: 100%;
+}
+
+/* Pull right  */
+div.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullRight a:hover:before
+{
+    width: 100%;
+}
+
+/* Pull left  */
+div.pullLeft a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullLeft a:hover:before
+{
+    width: 100%;
+}
+
+/* Pull up and down  */
+div.pullUpDown a:before, div.pullUpDown a:after
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUpDown a:before
+{
+    top: 0px;
+} 
+
+div.pullUpDown a:after
+{
+    bottom: 0px;
+}
+
+div.pullUpDown a:hover:before, div.pullUpDown a:hover:after
+{
+    height: 100%;
+}
+
+/* Pull right and left  */
+div.pullRightLeft a:before, div.pullRightLeft a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullRightLeft a:before
+{
+    left: 0px;
+} 
+
+div.pullRightLeft a:after
+{
+    right: 0px;
+}
+
+div.pullRightLeft a:hover:before, div.pullRightLeft a:hover:after
+{
+    width: 100%;
+}
+
+/* Highlight text out  */
+div.highlightTextOut a
+{
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+div.highlightTextOut a:before, div.highlightTextIn a:before
+{
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextOut a:hover:before, div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 

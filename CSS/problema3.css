@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/9757d496-239b-46c5-baea-6873cbfe9b3d/dd35n8x-4d905c51-c165-434f-8307-baafeb752faa.jpg");
+    font-family: "Roboto", Arial;
+  }
+  h1 {
+      font-family: "Roboto", Arial;
+      text-align: justify;
+      padding: 3rem;
+      color: #f4f3ee;
+  }
+  h2{
+    font-family: "Roboto", Arial;
+      text-align: center;
+      font-size: 60px;
+      padding: 1rem;
+      color: #ffffff;
+  }
+
+  ul {
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+
+
+table{
+	border-style: hidden;
+    background: rgba(243, 108, 74, 0.199);
+    border: none;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    padding-left: 30%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.856);
+    
+}
+th, td {
+    text-align: left;
+    padding: 1rem;
+}
+.td_sup{
+    align-items: right;
+    justify-content: right;
+    background-color: rgba(245, 117, 145, 0.493);
+}
+.td_inf{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(117, 255, 255, 0.486);
+}
+
+.input_text{
+    align-items: center;
+    justify-content: center;
+    size: 50;
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(252, 172, 172);
+    letter-spacing: 3px;
+}
+
+
+
+input[type="checkbox"]
+{
+    display: none;
+}
+input[type = "checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+button {
+    text-align: center;
+    color: #f21d4b;
+    background-color: #314b61;
+    border: 1px solid #f21d4b;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:35px;
+    font-size:17px;
+    transition: all 0.2s ease-in-out;
+    }
+  button:hover {
+  box-shadow: 1px 1px #f21d4b, 2px 2px #f21d4b, 3px 3px #f21d4b;
+  transform: translateX(-3px);
+  }

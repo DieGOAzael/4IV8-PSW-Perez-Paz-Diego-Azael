@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/problema10.css">
+    <script src="./JS/problema10.js""></script>
+    <title>Problema 10</title>
+</head>
+<body>
+    <h2>Problema 10</h2>
+    
+    <h1>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si 
+        este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en 
+        la empresa de acuerdo con la tabla dada.</h1>
+    
+        <form method="post" name="formulario">
+            <table class="TablaPrincipal">
+                <tr>
+                    <td class="td_sup">
+                        Digite su sueldo mensual:
+                    </td>
+                    <td class="td_sup">
+                        <input type="text" name="sueldo" onkeypress="return validarn(event)"> $
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_inf">
+                        Digite su antigüedad en años:
+                    </td>
+                    <td class="td_inf">
+                        <input type="text" name="exp" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup"></td>
+                    <td class="td_sup">
+                        <input type="button" value="Calcular sueldo" name="enviar" onclick="calculo()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_inf">
+                        Utilidad:
+                    <td class="td_inf">
+                        <input type="text" name="utilidad_final" id="cantidad" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">
+                        Sueldo con utilidad:
+                    <td class="td_sup">
+                        <input type="text" name="sueldo_final" id="cantidad" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_inf"></td>
+                    <td class="td_inf">
+                        <input type="button" value="Borrar" name="reset" onclick="borrar()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <button role="link" onclick="window.location='ProblemasJS.html'">Regresar al selector</button>
+</body>
+</html>

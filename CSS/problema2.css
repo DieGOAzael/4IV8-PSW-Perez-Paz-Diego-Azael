@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/287eab66-0f73-4b97-8e74-849c5f06d542/ddpjnax-0c63d531-3f00-42e1-ba99-7eed7e68794e.jpg/v1/fill/w_1077,h_742,q_70,strp/floyd_by_anthonypresley_ddpjnax-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04MjciLCJwYXRoIjoiXC9mXC8yODdlYWI2Ni0wZjczLTRiOTctOGU3NC04NDljNWYwNmQ1NDJcL2RkcGpuYXgtMGM2M2Q1MzEtM2YwMC00MmUxLWJhOTktN2VlZDdlNjg3OTRlLmpwZyIsIndpZHRoIjoiPD0xMjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.AuuoHjWL9dP0NyJTUlAIIKHrY4XS_tXuKrpeeqHMwQk");
+    font-family: "Roboto", Arial;
+  }
+  h1 {
+      font-family: "Roboto", Arial;
+      text-align: justify;
+      padding: 3rem;
+      color: #f4f3ee;
+  }
+  h2{
+    font-family: "Roboto", Arial;
+      text-align: center;
+      font-size: 60px;
+      padding: 1rem;
+      color: #ffffff;
+  }
+
+  ul {
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+
+
+table{
+	border-style: hidden;
+    background: rgba(243, 108, 74, 0.199);
+    border: none;
+    color: #ffcc08;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    padding-left: 30%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.856);
+    
+}
+th, td {
+    text-align: left;
+    padding: 1rem;
+}
+.td_sup{
+    align-items: right;
+    justify-content: right;
+    background-color: rgba(245, 200, 117, 0.493);
+}
+.td_inf{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(228, 229, 157, 0.486);
+}
+
+.input_text{
+    align-items: center;
+    justify-content: center;
+    size: 50;
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(252, 172, 172);
+    letter-spacing: 3px;
+}
+
+
+
+input[type="checkbox"]
+{
+    display: none;
+}
+input[type = "checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+button {
+  text-align: center;
+  color: #ff9486;
+  background-color: #d49561a6;
+  border: 1px solid #f2361d;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height:32px;
+  font-size:14px;
+  transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+  box-shadow: 1px 1px #ea7653, 2px 2px #ea7653dc, 3px 3px #ea7653bb;
+  transform: translateX(-3px);
+  }
