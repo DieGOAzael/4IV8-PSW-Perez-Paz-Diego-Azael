@@ -5,7 +5,11 @@
   }
   
   body {
-    background-image: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/954f2b90-24ec-408c-945d-2f157ae82461/de1j7kn-4fcbd939-6cb1-44b2-83ed-aa9faaeb3669.jpg/v1/fill/w_1264,h_632,q_70,strp/exploring_by_macksztaba_de1j7kn-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02NDAiLCJwYXRoIjoiXC9mXC85NTRmMmI5MC0yNGVjLTQwOGMtOTQ1ZC0yZjE1N2FlODI0NjFcL2RlMWo3a24tNGZjYmQ5MzktNmNiMS00NGIyLTgzZWQtYWE5ZmFhZWIzNjY5LmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.a36U-SRDb5nQVvFJvX32Yq-Ww5dMQdfkzklNHW5WRn0");
     font-family: "Roboto", Arial;
   }
   h1 {
@@ -32,11 +36,11 @@
 
 table{
 	border-style: hidden;
-    background: rgba(74, 153, 243, 0.199);
+    background: rgba(187, 196, 206, 0.199);
     border: none;
     display: inline-block;
     font-family: "Roboto", Arial;
-    padding-left: 35%;
+    padding-left: 31%;
     width: 100%;
     font-size: 20px;
     line-height: 25px;
@@ -50,12 +54,12 @@ th, td {
 .td_sup{
     align-items: right;
     justify-content: right;
-    background-color: rgba(22, 22, 24, 0.637);
+    background-color: rgba(0, 0, 0, 0.637);
 }
 .td_inf{
     align-items: center;
     justify-content: center;
-    background-color: rgba(172, 236, 255, 0.486);
+    background-color: rgba(104, 116, 119, 0.486);
 }
 
 .input_text{
@@ -79,18 +83,17 @@ input[type = "checkbox"]:checked ~ nav
     transform: translateX(350px);
 }
 button {
-    color: #1D9AF2;
-    background-color: #292D3E;
-    border: 1px solid #1D9AF2;
+    color: #ccd8e0;
+    background-color: #000000;
+    border: 1px solid #ccd8e0;
     border-radius: 4px;
     padding: 0 15px;
     cursor: pointer;
     height:32px;
     font-size:14px;
-    background-position: center;
-    transition: background 0.8s;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
     }
-  button:active{
-    box-shadow: 0 6px 0 #9eecff;
-    top: 6px;
-    }
+    button:hover {
+        transform: rotateZ(-30deg);
+        }

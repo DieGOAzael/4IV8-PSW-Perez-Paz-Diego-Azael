@@ -5,7 +5,11 @@
   }
   
   body {
-    background-image: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d348ff8-f996-42ab-89b8-494948fb367b/deh0z1y-8511171e-0f81-49f5-8f40-e2c9eb87d494.jpg/v1/fill/w_1185,h_674,q_70,strp/nagasaki_01_by_albertourra_deh0z1y-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMTM5IiwicGF0aCI6IlwvZlwvNmQzNDhmZjgtZjk5Ni00MmFiLTg5YjgtNDk0OTQ4ZmIzNjdiXC9kZWgwejF5LTg1MTExNzFlLTBmODEtNDlmNS04ZjQwLWUyYzllYjg3ZDQ5NC5qcGciLCJ3aWR0aCI6Ijw9MjAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.QzeWZ_iU9owcrgPpsBCLBpNIuzy08TXn8X3BJ8E0LJM");
     font-family: "Roboto", Arial;
   }
   h1 {
@@ -50,12 +54,12 @@ th, td {
 .td_sup{
     align-items: right;
     justify-content: right;
-    background-color: rgba(22, 22, 24, 0.637);
+    background-color: rgba(24, 24, 22, 0.637);
 }
 .td_inf{
     align-items: center;
     justify-content: center;
-    background-color: rgba(172, 236, 255, 0.486);
+    background-color: rgba(172, 255, 244, 0.61);
 }
 
 .input_text{

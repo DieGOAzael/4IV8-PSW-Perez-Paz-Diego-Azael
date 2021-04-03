@@ -9,21 +9,21 @@
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2780767c-1e4e-4a64-af2b-1f5fa8e7b082/deba0l2-a9e4dc59-6248-44e3-af78-9310d7d04400.jpg/v1/fill/w_1192,h_670,q_70,strp/new_year_lights_by_kvacm_deba0l2-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC8yNzgwNzY3Yy0xZTRlLTRhNjQtYWYyYi0xZjVmYThlN2IwODJcL2RlYmEwbDItYTllNGRjNTktNjI0OC00NGUzLWFmNzgtOTMxMGQ3ZDA0NDAwLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.A-05ySh7QOW3wuPlSxEIadAuN0W-yd_mgB8bDNt4JWE");
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/42a706d9-b352-4aac-883c-649b1863ab07/ddzs80m-6207934e-3ad2-4fb5-8b90-f8c4583394e8.png/v1/fill/w_1173,h_681,strp/oniria__el_amanecer_de_los_dragones_by_dazabiel_moonrider_ddzs80m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03NDQiLCJwYXRoIjoiXC9mXC80MmE3MDZkOS1iMzUyLTRhYWMtODgzYy02NDliMTg2M2FiMDdcL2RkenM4MG0tNjIwNzkzNGUtM2FkMi00ZmI1LThiOTAtZjhjNDU4MzM5NGU4LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.oqcIGWKag06rtEVd0S3Fq77ylfL0L4-fwZJODhRDlmc");
     font-family: "Roboto", Arial;
   }
   h1 {
       font-family: "Roboto", Arial;
       text-align: justify;
       padding: 3rem;
-      color: #f4f3ee;
+      color: #000000;
   }
   h2{
     font-family: "Roboto", Arial;
       text-align: center;
       font-size: 60px;
       padding: 1rem;
-      color: #ffffff;
+      color: #000000;
   }
 
   ul {
@@ -36,7 +36,7 @@
 
 table{
 	border-style: hidden;
-    background: rgba(204, 74, 243, 0.199);
+    background: rgba(74, 153, 243, 0.199);
     border: none;
     display: inline-block;
     font-family: "Roboto", Arial;
@@ -54,12 +54,12 @@ th, td {
 .td_sup{
     align-items: right;
     justify-content: right;
-    background-color: rgba(52, 6, 70, 0.568);
+    background-color: rgba(243, 222, 151, 0.637);
 }
 .td_inf{
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 104, 192, 0.486);
+    background-color: rgba(172, 249, 255, 0.61);
 }
 
 .input_text{
@@ -83,16 +83,18 @@ input[type = "checkbox"]:checked ~ nav
     transform: translateX(350px);
 }
 button {
-    color: rgba(52, 6, 70, 0.808);
-    background-color: rgba(255, 104, 192, 0.486);
-    border: 2px solid rgba(52, 6, 70, 0.801);
+    color: #530505;
+    background-color: rgba(243, 222, 151, 0.637);
+    border: 3px solid #530505;
     border-radius: 4px;
     padding: 0 15px;
     cursor: pointer;
     height:32px;
     font-size:14px;
-    transition: all 0.2s ease-in-out;
+    background-position: center;
+    transition: background 0.8s;
     }
-    button:hover {
-        border-radius: 50%;
-        }
+  button:active{
+    box-shadow: 0 6px 0 #3871a0;
+    top: 6px;
+    }

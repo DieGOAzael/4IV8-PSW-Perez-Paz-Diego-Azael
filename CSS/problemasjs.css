@@ -1,10 +1,13 @@
 body
 {
-  margin: 0;
   padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
   
+  background-image: url("https://www.upiicsafordummies.com/wp-content/uploads/2019/01/JavaScript.png");
   /* make it look decent enough */
-  background: #232323;
+ 
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -149,4 +152,17 @@ body
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+h1 {
+  font-family: "Roboto", Arial;
+  text-align: center;
+  padding: 1rem;
+  color: #f4f3ee;
+}
+h2{
+font-family: "Roboto", Arial;
+  text-align: center;
+  font-size: 60px;
+  padding: 1rem;
+  color: #ffffff;
 }

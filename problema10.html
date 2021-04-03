@@ -13,30 +13,31 @@
     
     <h1>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si 
         este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en 
-        la empresa de acuerdo con la tabla dada.</h1>
+        la empresa de acuerdo con la tabla.</h1>
+        <img src="./img/Captura de pantalla (3).png">
     
         <form method="post" name="formulario">
             <table class="TablaPrincipal">
                 <tr>
                     <td class="td_sup">
-                        Digite su sueldo mensual:
+                        Ingrese lo que gana al mes:
                     </td>
                     <td class="td_sup">
-                        <input type="text" name="sueldo" onkeypress="return validarn(event)"> $
+                        <input type="text" name="sueldo" onkeypress="return validar(event)"> $
                     </td>
                 </tr>
                 <tr>
                     <td class="td_inf">
-                        Digite su antigüedad en años:
+                        Ingrese los años que ha estado trabajando:
                     </td>
                     <td class="td_inf">
-                        <input type="text" name="exp" onkeypress="return validarn(event)">
+                        <input type="text" name="exp" onkeypress="return validar(event)">
                     </td>
                 </tr>
                 <tr>
                     <td class="td_sup"></td>
                     <td class="td_sup">
-                        <input type="button" value="Calcular sueldo" name="enviar" onclick="calculo()">
+                        <input type="button" value="Calcular sueldo" name="enviar" onclick="calcular()">
                     </td>
                 </tr>
                 <tr>
@@ -48,7 +49,7 @@
                 </tr>
                 <tr>
                     <td class="td_sup">
-                        Sueldo con utilidad:
+                        Su sueldo con utilidad:
                     <td class="td_sup">
                         <input type="text" name="sueldo_final" id="cantidad" readonly="readonly" class="input_text">
                     </td>

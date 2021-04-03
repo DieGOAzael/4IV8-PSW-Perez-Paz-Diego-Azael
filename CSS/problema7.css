@@ -5,7 +5,11 @@
   }
   
   body {
-    background-image: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d736315-8f93-490c-927e-d2ae304f3a02/ddyl1we-ffbdb750-778e-4d8e-91fb-d310c082bc87.jpg/v1/fill/w_1095,h_730,q_70,strp/rainbow_at_malshej_ghat_by_agarwalsonika_ddyl1we-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04NTQiLCJwYXRoIjoiXC9mXC8xZDczNjMxNS04ZjkzLTQ5MGMtOTI3ZS1kMmFlMzA0ZjNhMDJcL2RkeWwxd2UtZmZiZGI3NTAtNzc4ZS00ZDhlLTkxZmItZDMxMGMwODJiYzg3LmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.PEWeACB2lTPU3Ipw-WKwe-_BOSKNn2gTS_2pSQ6HNGM");
     font-family: "Roboto", Arial;
   }
   h1 {
@@ -32,7 +36,7 @@
 
 table{
 	border-style: hidden;
-    background: rgba(74, 153, 243, 0.199);
+    background: rgba(27, 70, 40, 0.253);
     border: none;
     display: inline-block;
     font-family: "Roboto", Arial;
@@ -50,12 +54,12 @@ th, td {
 .td_sup{
     align-items: right;
     justify-content: right;
-    background-color: rgba(22, 22, 24, 0.637);
+    background-color: rgba(113, 122, 103, 0.5);
 }
 .td_inf{
     align-items: center;
     justify-content: center;
-    background-color: rgba(172, 236, 255, 0.486);
+    background-color: rgba(238, 255, 140, 0.486);
 }
 
 .input_text{
@@ -64,7 +68,7 @@ th, td {
     size: 50;
     border-width: 2px;
     border-style: solid;
-    color: rgb(0, 48, 70);
+    color: rgb(0, 70, 55);
     letter-spacing: 3px;
 }
 
@@ -79,18 +83,16 @@ input[type = "checkbox"]:checked ~ nav
     transform: translateX(350px);
 }
 button {
-    color: #1D9AF2;
-    background-color: #292D3E;
-    border: 1px solid #1D9AF2;
+    color:#f4f3ee;
+    background-color: rgba(117, 131, 100, 0.829);
+    border: 3px solid #f4f3ee;
     border-radius: 4px;
     padding: 0 15px;
     cursor: pointer;
     height:32px;
     font-size:14px;
-    background-position: center;
-    transition: background 0.8s;
+    transition: all 0.2s ease-in-out;
     }
-  button:active{
-    box-shadow: 0 6px 0 #9eecff;
-    top: 6px;
-    }
+    button:hover {
+        transform: scale(0.8);
+        }

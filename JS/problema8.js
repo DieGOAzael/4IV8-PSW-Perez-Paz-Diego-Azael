@@ -1,14 +1,14 @@
-function validarn(e){
-    var teclado = (document.all)?e.keyCode:e.which;
-    if(teclado == 8)return true;
+function validar(e){
+    var entrada = (document.all)?e.keyCode:e.which;
+    if(entrada == 8)return true;
 
-    var patron = /[0-9\d .]/;
+    var crt = /[0-9\d .]/;
 
-    var prueba = String.fromCharCode(teclado);
-    return patron.test(prueba);
+    var prueba = String.fromCharCode(entrada);
+    return crt.test(prueba);
 }
 
-function calculo(){
+function calcular(){
     var valor0 = document.formulario.num_1.value;
     var valor1 = document.formulario.num_2.value;
     var valor2 = document.formulario.num_3.value;

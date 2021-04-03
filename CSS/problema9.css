@@ -5,7 +5,11 @@
   }
   
   body {
-    background-image: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b796ab5b-79e6-4619-b01a-d62f53a57650/de1jnnw-3be3d2c9-fc0d-43ed-850f-2b1836eedbd0.jpg/v1/fill/w_1000,h_563,q_75,strp/townscaper_overpaint_by_kamikaye_de1jnnw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NjMiLCJwYXRoIjoiXC9mXC9iNzk2YWI1Yi03OWU2LTQ2MTktYjAxYS1kNjJmNTNhNTc2NTBcL2RlMWpubnctM2JlM2QyYzktZmMwZC00M2VkLTg1MGYtMmIxODM2ZWVkYmQwLmpwZyIsIndpZHRoIjoiPD0xMDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.JTAy9ZLWwXDl4pP5KFuGubK5eqxdKzyk8FVK_8w_uos");
     font-family: "Roboto", Arial;
   }
   h1 {
@@ -32,7 +36,7 @@
 
 table{
 	border-style: hidden;
-    background: rgba(74, 153, 243, 0.199);
+    background: rgba(74, 243, 144, 0.199);
     border: none;
     display: inline-block;
     font-family: "Roboto", Arial;
@@ -50,12 +54,12 @@ th, td {
 .td_sup{
     align-items: right;
     justify-content: right;
-    background-color: rgba(22, 22, 24, 0.637);
+    background-color: rgba(202, 23, 17, 0.336);
 }
 .td_inf{
     align-items: center;
     justify-content: center;
-    background-color: rgba(172, 236, 255, 0.486);
+    background-color: rgba(216, 213, 56, 0.486);
 }
 
 .input_text{
@@ -79,18 +83,37 @@ input[type = "checkbox"]:checked ~ nav
     transform: translateX(350px);
 }
 button {
-    color: #1D9AF2;
-    background-color: #292D3E;
-    border: 1px solid #1D9AF2;
+    color: #e9c49b;
+    background-color: #bb141491;
+    border: 1px solid #e9c49b;
     border-radius: 4px;
     padding: 0 15px;
     cursor: pointer;
     height:32px;
     font-size:14px;
-    background-position: center;
-    transition: background 0.8s;
+    transition: all 0.2s ease-in-out;
     }
-  button:active{
-    box-shadow: 0 6px 0 #9eecff;
-    top: 6px;
+    button:hover {
+        animation: swing 1s ease;
+        animation-iteration-count: 1;
+        }
+        @keyframes swing {
+        15% {
+        transform: translateX(5px);
+        }
+        30% {
+        transform: translateX(-5px);
+        }
+        50% {
+        transform: translateX(3px);
+        }
+        65% {
+        transform: translateX(-3px);
+        }
+        80% {
+        transform: translateX(2px);
+        }
+        100% {
+        transform: translateX(0);
+        }
     }

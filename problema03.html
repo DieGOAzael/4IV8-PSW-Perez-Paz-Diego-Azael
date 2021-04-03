@@ -18,16 +18,16 @@
             <table class="TablaPrincipal">
                 <tr>
                     <td class="td_sup">
-                        Digite el total de la compra:
+                        Ingrese el costo de la compra:
                     </td>
                     <td class="td_sup">
-                        <input type="text" name="compra" onkeypress="return validarn(event)"> $
+                        <input type="text" name="compra" onkeypress="return validar(event)"> $
                     </td>
                 </tr>
                 <tr>
                     <td class="td_inf"></td>
                     <td class="td_inf">
-                        <input type="button" value="Obtener precio con descuento" name="enviar" onclick="calculo()">
+                        <input type="button" value="Obtener precio con descuento" name="enviar" onclick="calcular()">
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +39,7 @@
                 </tr>
                 <tr>
                     <td class="td_inf">
-                        El descuento aplicado es:
+                        Se aplicó un descuento de:
                     <td class="td_inf">
                         <input type="text" name="final_descuento" id="cantidad" readonly="readonly" class="input_text"> $
                     </td>
