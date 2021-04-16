@@ -11,6 +11,13 @@ header, footer{
 	text-align: center;
     background: #0081a7;
 }
+footer{
+    background: rgb(0, 0, 0);
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+}
 
 header h1{
     color: #fdfffc;
@@ -25,7 +32,7 @@ header span{
 
 footer span
 {
-  color: #AAA;
+  color: rgb(255, 255, 255);
 }
 
 div.container
