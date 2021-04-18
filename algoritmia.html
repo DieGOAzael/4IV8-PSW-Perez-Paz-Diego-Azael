@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/algoritmiaestilo.css">
 </head>
 <body>
-
+    <h1>PROBLEMAS DE ALGORITMIA</h1>
     <script src="./JS/algoritmiajs.js" ></script>
 
     <div class="container" >
@@ -148,6 +148,10 @@
 
     </div>
 
+
+
+
+
     <div class="container" >
         <div class="problema-container" >
             <h3 class="problema-title" >Problema 3</h3>
@@ -165,9 +169,11 @@
             <div class="problema-content" >
                 <input type="text" class="problema-input"
                 placeholder="Ingresa las palabras separadas por
-                una coma, no se aceptan espacios" id="p3-input" >
+                una coma, no se aceptan espacios" id="p3-input" onkeyup = "this.value=this.value.toUpperCase()">
                 <button type="button" class="problema-button"
                 style="margin-top: 1rem;" onClick="problema3()" >Calcular</button>
+                <br>
+                <div id="plb"></div>
                 <pre class="problema-output" id="p3-output" >
                     Esperando respuesta ...
                 </pre>

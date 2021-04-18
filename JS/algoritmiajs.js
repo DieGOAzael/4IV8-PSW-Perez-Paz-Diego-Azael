@@ -70,6 +70,33 @@ function problema2(){
 
 }
 
-function problema3(){
-    alert("Ahi lo hacen tengo sueñito uwu/");
+
+
+
+function problema3() {
+    var p3_input = document.querySelector('#p3-input').value;
+    var long = [];
+    while (plb.firstChild) {
+        plb.removeChild(plb.firstChild);
+    }
+
+        var palabra = p3_input.split(',').reverse();
+
+        for (var i = 0; i < palabra.length; i++) {
+
+            var letras = palabra[i];
+            var valor_u = [...new Set(letras.split(''))];
+            var resultado = valor_u.length;
+
+            long.push(resultado);
+
+            let p = document.createElement('ul');
+            p.innerHTML = `<li> ${letras} : ${resultado} </li>`;
+            plb.appendChild(p);
+
+        }
+
+        var num_caracteres = Math.max.apply(null, long)
+
+        document.querySelector('#p3-output').textContent = "El mayor número de carácteres únicos es: " + num_caracteres;
 }
