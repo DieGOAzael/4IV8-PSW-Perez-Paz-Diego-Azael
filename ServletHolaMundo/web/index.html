@@ -6,34 +6,84 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Registro de Usuarios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css" type="text/css"><link>
+        <script src="JS/script.js"></script>
     </head>
     <body>
         <div class="container" >
             
-            <form name="formulario" method="post" 
+            <div class="cuadro_identificarse">
+                <h3>Registrar</h3>
+                <aside>
+                <form name="formulario" method="post" 
                   action="Registro">
                 <label>Nombre:</label>
-                <input type="text" name="nombre" >
-                <br>
+                <input type="text" name="nombre" required maxlength="35" onkeypress="return soloLetras(event)" >
+                
                 <label>Apellido Paterno:</label>
-                <input type="text" name="appat" >
-                <br>
+                <input type="text" name="appat" required maxlength="35" onkeypress="return soloLetras(event)">
+                
                 <label>Apellido Materno:</label>
-                <input type="text" name="appmat" >
-                <br>
+                <input type="text" name="appmat" required maxlength="35" onkeypress="return soloLetras(event)">
+                
                 <label>Edad:</label>
-                <input type="number" name="edad" min="01" max="99" size="2" >
-                <br>
+                <input type="number" name="edad" min="01" max="99" size="2" onkeypress="return soloNumeros(event)">
+                
                 <label>Correo:</label>
-                <input type="email" name="correo" >
-                <br>
+                <input type="email" name="correo" onsubmit="return validarEmail(event)">
+                
                 <input type="submit" value="Registro de Usuarios" >
                 <input type="reset" value="Borrar Registro" >
             </form>
+                </aside>
+            </div>
+            <div class="containerConsulta" >
+                <aside>
+                <form method="get" name="consultarregistro" action="Consultar">
+                    <input type="submit" value="Consultar Tabla de Usuarios" >
+                </form>
+                </aside>
+            </div>
+            <br>
+            <div class="containerEliminar" >
+                <h3>Eliminar</h3>
+                <aside>
+                <form method="post" name="formularioeliminar" action="Eliminar">
+                    <label>ID del Usuario a Eliminar</label>
+                    <input type="number" name="ideliminar" >
+                    <input type="submit" value="Eliminar Usuario" >
+                </form>
+                </aside>
+                
+            </div>
+           
             
+            <div class="containerActualizar">
+                <h3>Actualizar</h3>
+                <aside>
+                <form method="post" name="formularioactualizar" action="Actualizar" onkeypress="return soloNumeros(event)"><br>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Ingrese ID del usuario a actualizar:</span>
+                            <input type="number" name="idactualizar" placeholder="Digite el ID" required onkeypress="return validarn(event)">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Actualizar datos">
+                    </div>
+                    
+                </form>
+                </aside>
+            </div>
+            
+             <div class="containerequis">
+                <h2>Por: Diego Azael Pérez Paz</h2>
+                <br>
+                <h2>Programación y servicios web</h2>
+            </div>
         </div>
     </body>
 </html>
